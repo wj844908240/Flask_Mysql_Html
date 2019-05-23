@@ -4,17 +4,17 @@
 
 ##### 安装
 ```
-pip install flask-look-mysql
+pip install flask-mysql-html
 ```
 
 ##### 使用
 ```python
 from flask import Flask
-from flask_look_mysql import FlaskLookMysql
+from flask_mysql_html import FlaskMysqlHTML
 
 app = Flask(__name__)
 app.config["URL_LIST"] = ["mysql://root:123456@127.0.0.1:3306/metest"]
-FlaskLookMysql(app)
+FlaskMysqlHTML(app)
 
 if __name__ == '__main__':
     app.run()
